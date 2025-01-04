@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, responsiveness, and font import -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAT: Rebellion Against Tyranny</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+    <style>
+        /* Global styles for the entire page */
+        body {
+            font-family: 'VT323', monospace;
+            margin: 0;
+            padding: 0;
+            background: #0A0A0A url('images/pattern.png') repeat;
+            color: #00FF00;
+            text-align: center;
+        }
+
+        /* Header section styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: #111;
+            border-bottom: 2px solid #00FF00;
+        }
+
+        nav a, .wallet-button {
+            font-family: 'VT323', monospace;
+            margin: 5px;
+            color: #00FF00;
+            text-decoration: none;
+            border: 1px solid #00FF00;
+            background: transparent;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* Hero section styling with background and content */
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 5rem;
+        }
+
+        .hero img {
+            border-radius: 20px;
+            border: 3px solid #00FF00;
+            width: 90%;
+            max-width: 600px;
+            height: auto;
+            opacity: 0.8;
+        }
+
+        .hero div {
+            text-shadow: 2px 2px 4px black;
+            color: #00FF00;
+            opacity: 0.9;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* NFT Grid Section */
+        .nft-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 2rem;
+        }
+
+        .nft-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            padding: 1rem;
+            background: #111;
+            border-top: 2px solid #00FF00;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav a, .wallet-button {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .hero {
+                padding: 2rem;
+            }
+
+            .hero div {
+                font-size: 1rem;
+            }
+
+            .nft-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section: Contains the logo and navigation menu -->
+    <header>
+        <div class="logo">
+            <img src="images/Logo2.png" alt="RAT Logo" style="height: 50px; filter: invert(1%) contrast(100%);">
+        </div>
+        <nav>
+            <a href="about-us.html">About us</a>
+            <a href="rat-maze.html">Rat Maze</a>
+            <a href="cheese-scroll.html">Cheese Scroll</a>
+            <button class="wallet-button">Connect Wallet</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section: Contains main call-to-action and message with image overlay -->
+    <section class="hero">
+        <img src="images/rat-army pixelized.webp" alt="Hero Image">
+        <div>
+            <h1>Rebel against the oppressor</h1>
+            <p>Destabilize the 1% elite with a meaningful crypto project</p>
+        </div>
+    </section>
+
+    <!-- NFT Grid Section: Displaying multiple NFT cards -->
+    <h2 style="color: #00FF00; text-align: center; margin-top: 2rem;">Super Utility RAT NFT collection coming SOON! AI art guided by HI (Human Intelligence)</h2>
+    <section class="nft-grid">
+        <div class="nft-card">
+            <img src="images/Female Rat Adult.webp" alt="RAT NFT Item">
+            <p>RAT Token #001</p>
+            <p>Price: Coming Soon</p>
+            <button class="buy-button">Buy Soon</button>
+        </div>
+        <div class="nft-card">
+            <img src="images/Male Rat Adult.webp" alt="RAT NFT Item">
+            <p>RAT Token #002</p>
+            <p>Price: Coming soon</p>
+            <button class="buy-button">Buy Soon</button>
+        </div>
+    </section>
+
+    <!-- Footer Section: Contains copyright information -->
+    <footer>
+        <p>&copy; 2025 RAT: Rebellion Against Tyranny. All rights reserved.</p>
+    </footer>
+</body>
+</html>
