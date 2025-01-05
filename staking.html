@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAT Token Staking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+    <style>
+        body {
+            font-family: 'VT323', monospace;
+            margin: 0;
+            padding: 0;
+            background: #0A0A0A url('images/pattern.png') repeat;
+            color: #00FF00;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: #111;
+            border-bottom: 2px solid #00FF00;
+        }
+
+        nav a, .wallet-button {
+            font-family: 'VT323', monospace;
+            margin: 5px;
+            color: #00FF00;
+            text-decoration: none;
+            border: 1px solid #00FF00;
+            background: transparent;
+            padding: 10px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a[href="staking.html"] {
+            font-weight: bold;
+            border: 2px solid #FF4500;
+            background-color: #111;
+        }
+
+        nav a:hover {
+            background-color: #FF4500;
+            color: #000;
+        }
+
+        #benefits, #strategies {
+            padding: 3rem;
+            border: 2px solid #00FF00;
+            border-radius: 15px;
+            background: #111;
+            margin: 2rem;
+        }
+
+        #benefits h2, #strategies h2 {
+            color: #FF4500;
+        }
+
+        #benefits ul, #strategies ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #benefits li, #strategies li {
+            margin: 10px 0;
+        }
+
+        #staking-form {
+            padding: 2rem;
+        }
+
+        footer {
+            padding: 1rem;
+            background: #111;
+            border-top: 2px solid #00FF00;
+        }
+
+        .disclaimer {
+            font-size: 0.8rem;
+            color: #FF4500;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Logo2.png" alt="RAT Logo" style="height: 50px; filter: invert(1%) contrast(100%);">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About us</a>
+            <a href="rat-maze.html">Rat Maze</a>
+            <a href="cheese-scroll.html">Cheese Scroll</a>
+            <a href="staking.html">Staking</a>
+            <button class="wallet-button">Connect Wallet</button>
+        </nav>
+    </header>
+
+    <section id="benefits">
+        <h2>Why Stake Your RAT Tokens?</h2>
+        <ul>
+            <li>📊 <strong>Earn Passive Income:</strong> Staking provides you with consistent token rewards, making your tokens work for you while supporting the RAT ecosystem.</li>
+            <li>💹 <strong>Incentivize Long-Term Holding:</strong> By locking your tokens for longer durations, you benefit from higher rewards, encouraging sustainable growth and stability.</li>
+            <li>🔒 <strong>Network Security:</strong> Staking strengthens the network by reducing token volatility and rewarding holders for securing the ecosystem.</li>
+            <li>🗳️ <strong>Participation in Governance:</strong> Stakers can gain influence in decision-making, contributing to the future direction of the RAT project.</li>
+            <li>🚀 <strong>Growth Potential:</strong> With a capped supply and community-driven rewards, long-term staking helps grow both your holdings and project value.</li>
+        </ul>
+    </section>
+
+    <section id="strategies">
+        <h2>Example Staking Strategies (Assuming a RAT token price of $0.10 and a market cap of $10 million)</h2>
+        <ul>
+            <li>🧀 <strong>1 Week (APY: ~260%):</strong> Stake 100 RAT tokens ($10). Earn 5 RAT back ($0.50). Fast cheese grab.</li>
+            <li>🧀 <strong>1 Month (APY: ~180%):</strong> Stake 500 RAT tokens ($50). Earn 75 RAT back ($7.50). Tasty patience pays off.</li>
+            <li>🧀 <strong>3 Months (APY: ~120%):</strong> Stake 1,000 RAT tokens ($100). Earn 250 RAT back ($25). Big cheese coming in.</li>
+            <li>🧀 <strong>6 Months (APY: ~80%):</strong> Stake 2,000 RAT tokens ($200). Earn 800 RAT back ($80). Syndicate cheese hoard.</li>
+            <li>🧀 <strong>1 Year (APY: ~60%):</strong> Stake 5,000 RAT tokens ($500). Earn 3,000 RAT back ($300). Welcome, King Rat.</li>
+        </ul>
+        <p class="disclaimer">*APY rates are approximate and may vary based on market conditions.</p>
+    </section>
+
+    <section id="staking-form">
+        <h2>Stake Your Tokens</h2>
+        <form>
+            <label for="walletAddress">Wallet Address:</label>
+            <input type="text" id="walletAddress" name="walletAddress" required>
+
+            <label for="amount">Amount to Stake:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="duration">Staking Duration:</label>
+            <select id="duration" name="duration">
+                <option value="1_week">"The Sewer Scurry" (1 Week)</option>
+                <option value="1_month">"Rat City Hustler" (1 Month)</option>
+                <option value="3_months">"Cheese Cartel" (3 Months)</option>
+                <option value="6_months">"Rodent Syndicate" (6 Months)</option>
+                <option value="1_year">"King of the Rats" (1 Year)</option>
+            </select>
+
+            <button type="submit">Stake Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 RAT: Rebellion Against Tyranny. All rights reserved.</p>
+    </footer>
+</body>
+</html>
