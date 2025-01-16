@@ -34,7 +34,6 @@
         }
 
         nav a, .wallet-button {
-            font-family: 'VT323', monospace;
             color: #00FF00;
             text-decoration: none;
             border: 1px solid #00FF00;
@@ -49,7 +48,6 @@
         }
 
         .hero {
-            position: relative;
             text-align: center;
             padding: 5rem;
         }
@@ -57,20 +55,9 @@
         .hero img {
             border-radius: 20px;
             border: 3px solid #00FF00;
-            width: 90%;
-            max-width: 600px;
-            height: auto;
+            width: 100%;
+            max-width: 800px;
             opacity: 0.8;
-        }
-
-        .hero div {
-            color: #00FF00;
-            font-size: 1.24rem;
-            font-weight: bold;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
 
         .nft-grid {
@@ -131,10 +118,6 @@
             border-bottom: 1px solid #00FF00;
         }
 
-        .moonsheet th {
-            font-weight: bold;
-        }
-
         .moonsheet td:last-child {
             color: #FF0000;
         }
@@ -160,10 +143,6 @@
                 padding: 2rem;
             }
 
-            .hero div {
-                font-size: 0.827rem;
-            }
-
             .nft-grid {
                 grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             }
@@ -171,10 +150,10 @@
     </style>
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/Logo2.png" alt="RAT Logo" style="height: 50px; filter: invert(1%) contrast(100%);">
+            <img src="images/Logo2.png" alt="RAT Logo" style="height: 50px; filter: invert(1%);">
         </div>
         <nav>
             <a href="about-rat.html">About RAT Family</a>
@@ -182,50 +161,44 @@
             <a href="cheese-sharing.html">Cheese Sharing</a>
             <a href="staking.html">Staking</a>
             <a href="https://t.me/RATtokenofficial" target="_blank">Telegram</a>
-            <a href="https://x.com/therattoken?s=21&t=-krWmsZ2-EUL-ElM5bEAZw" target="_blank">X</a>
+            <a href="https://x.com/therattoken" target="_blank">X</a>
             <a href="#contract-code">Contract #</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <p style="font-size: 1.5rem; text-align: center; font-weight: bold; color: #00FF00;">
-            Welcome to <strong>RAT: Rebellion Against Tyranny</strong> — not your typical crypto project. </p> <p style="font-size: 1.5rem;> One dev, one mission: flip the digital script and give power back to the 99%. </p>
-            <p> style="font-size: 1.5rem; Tired of centralized greed? So are we. <span style="color: #FF0000;">Total Supply: 8 Billion RAT Tokens — one for every soul on the planet.</span> Buy in before the cheese is gone. The supply's limited, the FOMO's real, and the revolution? Already started. Don't just watch — hoard the cheese.
+        <p>
+            Welcome to <strong>RAT: Rebellion Against Tyranny</strong> — not your typical crypto project.<br>
+            One dev, one mission: flip the digital script and give power back to the 99%!
         </p>
-        <img src="images/rat-army pixelized.webp" alt="Hero Image" style="border-radius: 20px; border: 3px solid #00FF00; width: 100%; max-width: 800px; height: auto; opacity: 0.8;">
-        <div style="color: #00FF00; -webkit-text-stroke: 0.25px black; margin-top: 1rem; text-align: center;">
-           
-        </div>
+        <p>
+            Tired of centralized greed? So are we.<br>
+            <span style="color: #FF0000;">Total Supply: 8 Billion RAT Tokens</span> — one for every soul on the planet. Buy in before the cheese is gone!
+        </p>
+        <img src="images/rat-army pixelized.webp" alt="RAT Army Pixelized">
     </section>
-    
 
     <!-- NFT Grid Section -->
-    <h2 style="color: #00FF00; text-align: center; margin-top: 2rem;">Super Utility RAT NFT collection coming SOON! AI art guided by HI (Human Intelligence)</h2>
+    <h2>Super Utility RAT NFT Collection Coming SOON! AI Art Guided by HI (Human Intelligence)</h2>
     <section class="nft-grid">
         <div class="nft-card">
-            <img src="images/Female Rat Adult.webp" alt="RAT NFT Item">
+            <img src="images/Female Rat Adult.webp" alt="Female RAT NFT">
             <p>RAT Token #001</p>
             <p>Price: Coming Soon</p>
-            <button class="buy-button">Buy Soon</button>
         </div>
         <div class="nft-card">
-            <img src="images/Male Rat Adult.webp" alt="RAT NFT Item">
+            <img src="images/Male Rat Adult.webp" alt="Male RAT NFT">
             <p>RAT Token #002</p>
-            <p>Price: Coming soon</p>
-            <button class="buy-button">Buy Soon</button>
+            <p>Price: Coming Soon</p>
         </div>
     </section>
 
     <!-- Moonsheet Section -->
     <section class="moonsheet">
-        <h2 style="font-size:1.65rem; /* HIGHLIGHT START - Increased Size */ text-align: center;">
-            RAT Token Moonsheet 🚀
-        </h2> 
-        <p style="font-size: 1.5rem; /* HIGHLIGHT START - Increased Size */ text-align: center;">
-            Here's how your cheese will multiply if you hold! 📈
-        </p> 
-        <table> 
+        <h2>RAT Token Moonsheet 🚀</h2>
+        <p>Here's how your cheese will multiply if you hold! 📈</p>
+        <table>
             <tr>
                 <th>Token Price</th>
                 <th>Market Cap</th>
@@ -235,7 +208,7 @@
             <tr>
                 <td>$0.0001</td>
                 <td>$800K</td>
-                <td>RAT Project Launch</td>
+                <td>Project Launch</td>
                 <td>Q1 2025</td>
             </tr>
             <tr>
@@ -247,33 +220,19 @@
             <tr>
                 <td>$0.01</td>
                 <td>$80M</td>
-                <td>RAT First AI Tech Solution Launch</td>
+                <td>AI Tech Solution Launch</td>
                 <td>Q4 2025</td>
             </tr>
-            <tr>
-                <td>$0.05</td>
-                <td>$400M</td>
-                <td>Key Technological Partnerships</td>
-                <td>Q2 2026</td>
-            </tr>
-            <tr>
-                <td>$0.10</td>
-                <td>$800M</td>
-                <td>RAT Business Incorporation</td>
-                <td>Q4 2026</td>
-            </tr>
         </table>
-        <p style="margin-top: 1.5rem; font-size: 1.2rem; color: #ff0000;">
-            *Disclaimer: Cryptocurrency investments involve significant risk and price speculation. This moonsheet is for illustrative purposes only and does not guarantee returns. Invest responsibly.
-        </p>
+        <p style="color: #FF0000;">*Disclaimer: Cryptocurrency investments involve risks. Invest responsibly.</p>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <div class="social-links">
             <a href="https://t.me/RATtokenofficial" target="_blank">Telegram</a>
-            <a href="https://x.com/therattoken?s=21&t=-krWmsZ2-EUL-ElM5bEAZw" target="_blank">X</a>
-            <a id="contract-code" href="#">Contract #: Soon</a>
+            <a href="https://x.com/therattoken" target="_blank">X</a>
+            <a href="#contract-code">Contract #: Coming Soon</a>
         </div>
         <p>&copy; 2025 RAT: Rebellion Against Tyranny. All rights reserved.</p>
     </footer>
