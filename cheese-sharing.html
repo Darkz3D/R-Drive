@@ -23,15 +23,44 @@
             padding: 1rem;
             background: #111;
             border-bottom: 2px solid #00FF00;
+            flex-wrap: wrap;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
         }
 
         nav a {
             font-family: 'VT323', monospace;
             color: #00FF00;
             text-decoration: none;
-            border: 1px solid #00FF00;
+            font-size: 1.2rem;
+            border: 2px solid #00FF00;
             padding: 10px 20px;
             border-radius: 10px;
+            transition: background 0.3s, color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background: #00FF00;
+            color: #111;
+            transform: scale(1.05);
+        }
+
+        nav a:active {
+            transform: scale(1);
+        }
+
+        .logo img {
+            height: 50px;
+            filter: invert(1%);
+        }
+
+        section {
+            padding: 2rem;
         }
 
         .content-box {
@@ -40,7 +69,25 @@
             border-radius: 10px;
             border: 1px solid #00FF00;
             margin: 2rem auto;
-            max-width: 800px;
+            max-width: 90%;
+        }
+
+        .content-box p {
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .content-box h1 {
+            font-size: 2rem;
+            color: #FFA500;
+            margin-bottom: 2rem;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #FF4500;
+            text-decoration: underline;
         }
 
         footer {
@@ -49,30 +96,38 @@
             border-top: 2px solid #00FF00;
         }
 
-        /* Mobile Optimization */
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
             }
 
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
             nav a {
                 width: 100%;
+                max-width: 300px;
                 text-align: center;
-                margin-bottom: 10px;
+            }
+
+            section {
+                padding: 1.5rem;
             }
 
             .content-box {
-                padding: 1rem;
+                padding: 1.5rem;
             }
 
-            h1, p {
-                font-size: 1rem;
+            .content-box p {
+                font-size: 1.3rem;
+                line-height: 2rem;
             }
-        }
 
-        .highlight {
-            font-weight: bold;
-            text-decoration: underline;
+            .content-box h1 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
@@ -81,7 +136,7 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="images/Logo2.png" alt="RAT Logo" style="height: 50px; filter: invert(1%) contrast(100%);">
+                <img src="images/Logo2.png" alt="RAT Logo">
             </a>
         </div>
         <nav>
@@ -89,40 +144,36 @@
             <a href="about-rat.html">About RAT Family</a>
             <a href="sewer-map.html">Sewer Map</a>
             <a href="staking.html">Staking</a>
-            
         </nav>
     </header>
 
-    <!-- Cheese Scroll Content -->
+    <!-- Cheese Sharing Content -->
     <section>
-        <h1>The Cheese Sharing part</h1>
+        <h1>The Cheese Sharing Part</h1>
         <div class="content-box">
             <p>
-                Welcome to the <strong>Cheese Sharing part</strong>. Here's the deal: <span class="highlight">8 billion tokens</span>. Yeah, you heard it. That's one token for every poor soul on this planet. The supply is a reflection of the current world population, because everyone should have a piece of the digital cheese.
+                Welcome to the <span class="highlight">Cheese Sharing Part</span>. Here's the deal: <span class="highlight">8 billion tokens</span>. That's one token for every poor soul on this planet. The supply is a reflection of the current world population, because <strong>everyone deserves a piece of the digital cheese</strong>.
             </p>
             <p>
                 Why hold? Because this isn't your typical rug-pull scam cooked up by some faceless Discord degen. We're launching on <span class="highlight">Solana</span> – because gas fees on other chains make you feel like you're financing a billionaire's yacht.
             </p>
             <p>
-                <strong>The mission?</strong> Build a decentralized, rebellious ecosystem where the 99% can finally flip the bird to centralized power. <span class="highlight">NFTs</span>? Yes. Real-world solutions? Absolutely. Expect everything from aggressive marketing to partnerships designed to break the mold of modern financial slavery.
+                <strong>The mission?</strong> Build a decentralized, rebellious ecosystem where the 99% can finally flip the bird to centralized power. <span class="highlight">NFTs</span>? Yes. Real-world solutions? Absolutely. Expect everything from <span class="highlight">aggressive marketing</span> to partnerships designed to <strong>break the mold of modern financial slavery</strong>.
             </p>
             <p>
-                <span class="highlight">Tokenomics?</span> Solid. Transparent. No hidden traps. Dev isn’t rugging – we’re here to stay, and every RAT NFT you hold gives you a slice of influence over the project. This isn't just a meme; it's a middle finger to oppressive financial systems.
-            </p>
-            <p> <span class="highlight">8 Billions tokens Tokenomics</span>
-            </p>
-            <p> No crazy unrealistic promises</p>
-            <p>Launch will be on Pump.fun</p>
-            </p>Dev will buyback oppportunity dip for future development
-          
-            <p>NFT sale will go for the marketing and token burn</p>    
-            </p>
-            Merch sale will go for technology/product research and development. <p>
-            </p>
-
+                <span class="highlight">Tokenomics:</span> Solid. Transparent. No hidden traps. Dev isn’t rugging – we’re here to stay. Every <strong>RAT NFT</strong> you hold gives you a slice of influence over the project. This isn't just a meme; it's a <strong>middle finger to oppressive financial systems</strong>.
             </p>
             <p>
-                The cheese isn't free – it's earned. So join us. Hoard the cheese, disrupt the system, and remember: <strong>We are the 99%.</strong>
+                <span class="highlight">8 Billion Tokens:</span> Transparent tokenomics with no crazy unrealistic promises.
+            </p>
+            <p>
+                Launch will be on <span class="highlight">Pump.fun</span>.
+            </p>
+            <p>
+                Dev will <strong>buy back dips</strong> for future development. <strong>NFT sales</strong> will fund marketing and token burns. <strong>Merch sales</strong> will go toward <span class="highlight">technology/product research and development</span>.
+            </p>
+            <p>
+                The cheese isn't free – it's earned. So join us. <strong>Hoard the cheese, disrupt the system</strong>, and remember: <span class="highlight">We are the 99%</span>.
             </p>
         </div>
     </section>
