@@ -25,18 +25,37 @@
         header {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding: 1rem;
             background: #111;
             border-bottom: 2px solid #00FF00;
+            flex-wrap: wrap;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
         }
 
         nav a {
-            font-family: 'VT323', monospace;
             color: #00FF00;
             text-decoration: none;
             border: 1px solid #00FF00;
             padding: 10px 20px;
             border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #00FF00;
+            color: #111;
+        }
+
+        .logo img {
+            height: 50px;
+            filter: invert(1%);
         }
 
         section {
@@ -49,7 +68,7 @@
             border-radius: 10px;
             border: 1px solid #00FF00;
             margin: 2rem auto;
-            max-width: 800px;
+            max-width: 90%;
             animation: slideIn 2s ease-out;
         }
 
@@ -63,6 +82,36 @@
             background: #111;
             border-top: 2px solid #00FF00;
         }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            nav a {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+
+            .content-box {
+                padding: 1.5rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -70,11 +119,10 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="images/Logo2.png" alt="RAT Logo" style="height: 50px; filter: invert(1%) contrast(100%);">
+                <img src="images/Logo2.png" alt="RAT Logo">
             </a>
         </div>
         <nav>
-            
             <a href="index.html">Home</a>
             <a href="sewer-map.html">Sewer Map</a>
             <a href="cheese-scroll.html">Cheese Scroll</a>
